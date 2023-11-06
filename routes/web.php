@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\StudentController;
+use Doctrine\DBAL\Schema\Index;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +23,4 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/about', function(){
-    return view('about');
-});
+Route::get('/students', [StudentController::class, 'index']);
