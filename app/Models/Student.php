@@ -9,4 +9,8 @@ class Student extends Model
 {
     use HasFactory;
 
+    // DATA FILLABLE untuk insert data dengan ELOQUENT
+    protected $fillable = [
+        'name', 'gender', 'nis', 'class_id'
+    ];
 }

@@ -39,6 +39,7 @@ class StudentSeeder extends Seeder
         //     ]);
         // }
 
+        // FAKER FACTORY
         Student::factory()->count(20)->create();
     }
 }
